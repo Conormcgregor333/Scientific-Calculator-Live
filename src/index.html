@@ -14,222 +14,251 @@
     <div class="container">
         <h1 class="text-center my-3">Scientific Calculator</h1>
     </div>
+   
     <div class="row mx-2">
-        <div class="col-12 col-md-6 offset-md-3">
-            <div class="card">
+        <div class="col-12 col-md-8 offset-md-2">
+            <div class="card" >
                 <div class="card-body">
                     <input id="calcvalue" readonly class="form-control form-control-lg text-end" type="text"
-                        aria-label=".form-control-lg example">
-                    <div class="row gx-1">
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">(</button>
+                        aria-label=".form-control-lg example" placeholder="0">
+                    <div class="d-flex ">
+                        <div class="row gx-1">
+                            <div class="col-8 btn-group " role="group" aria-label="Button group with two buttons">
+                                <button type="button" class="btn  mt-2 w-100"style="background-color: rgb(212, 212, 212)
+                                ;">Rad</button>
+                                <div class="btn-group" role="group">
+                                    <div class="btn-line"></div>
+                                </div>
+                                <button type="button" class="btn  mt-2 w-100"style="background-color: rgb(212, 212, 212)
+                                ;">Deg</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn mt-2 w-100" style="background-color: rgb(212, 212, 212)
+                                ;">x!</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-light mt-2 w-100"style="background-color: rgb(212, 212, 212)
+                                ;">Inv</button>
+                            </div>
+
+                            <div class="col-4">
+                                <button type="button" class="btn btn-light mt-2 w-100"style="background-color: rgb(212, 212, 212)
+                                ;">Sin</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-light mt-2 w-100"style="background-color: rgb(212, 212, 212)
+                                ;">ln</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-light mt-2 w-100"style="background-color: rgb(212, 212, 212)
+                                ;">π</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-light mt-2 w-100 "style="background-color: rgb(212, 212, 212)
+                                ;">cos</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-light mt-2 w-100"style="background-color: rgb(212, 212, 212)
+                                ;">log</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-light mt-2 w-100"style="background-color: rgb(212, 212, 212)
+                                ;">e</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-light mt-2 w-100"style="background-color: rgb(212, 212, 212)
+                                ;">tan</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-light mt-2 w-100"style="background-color: rgb(212, 212, 212)
+                                ;">√</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-light mt-2 w-100"style="background-color: rgb(212, 212, 212)
+                                ;">Ans</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-light mt-2 w-100"style="background-color: rgb(212, 212, 212)
+                                ;">EXP</button>
+                            </div>
+                            <div class="col-4">
+                                <button type="button" class="btn btn-light mt-2 w-100"style="background-color: rgb(212, 212, 212)
+                                ;">x^y</button>
+                            </div>
+
                         </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">)</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">%</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">AC</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">7</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">8</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">9</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100"> ÷</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">4</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">5</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">6</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">×</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">1</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">2</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">3</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">-</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">0</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">.</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-primary mt-2 w-100">=</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">+</button>
-                        </div>
-                        <div class="col-6 btn-group " role="group" aria-label="Button group with two buttons">
-                            <button type="button" class="btn btn-light mt-2 w-100">Rad</button>
-                            <div class="btn-group" role="group">
-                                <div class="btn-line"></div>
-                              </div>
-                              <button type="button" class="btn btn-light mt-2 w-100">Deg</button>
-                        </div>
-                        
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">x!</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">Inv</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">sin</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">ln</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">π</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">cos</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">log</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">e</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">tan</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">√</button>
-                        </div>
-                        <div class="col-6">
-                            <button type="button" class="btn btn-light mt-2 w-100">Ans</button>
-                        </div>
-                       
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">EXP</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light mt-2 w-100">x^y</button>
+                        <div class="row gx-1 mx-1">
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light mt-2 w-100"style="background-color: rgb(212, 212, 212)
+                                ;">(</button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light mt-2 w-100"style="background-color: rgb(212, 212, 212)
+                                ;">)</button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light mt-2 w-100"style="background-color: rgb(212, 212, 212)
+                                ;">%</button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light mt-2 w-100"style="background-color: rgb(212, 212, 212)
+                                ;">AC</button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light mt-2 w-100">7</button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light mt-2 w-100">8</button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light mt-2 w-100">9</button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light mt-2 w-100"style="background-color: rgb(212, 212, 212)
+                                ;"> ÷</button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light mt-2 w-100">4</button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light mt-2 w-100">5</button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light mt-2 w-100">6</button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light mt-2 w-100"style="background-color: rgb(212, 212, 212)
+                                ;">×</button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light mt-2 w-100">1</button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light mt-2 w-100">2</button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light mt-2 w-100">3</button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light mt-2 w-100"style="background-color: rgb(212, 212, 212)
+                                ;"> -</button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light mt-2 w-100">0</button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light mt-2 w-100">.</button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-primary mt-2 w-100">=</button>
+                            </div>
+                            <div class="col-3">
+                                <button type="button" class="btn btn-light mt-2 w-100"style="background-color: rgb(212, 212, 212)
+                                ;"> 
+                                +</button>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
-    <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
-  <script>
-     window.addEventListener('load', function() {
-        // Your code here
-       
-        var display = document.getElementById('calcvalue');
-        
-            const buttons=document.getElementsByClassName('btn');
-            
-            let currentvalue="";
+
+
+    <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js"
+        crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('load', function () {
+            // Your code here
+
+            var display = document.getElementById('calcvalue');
+
+            const buttons = document.getElementsByClassName('btn');
+
+            let currentvalue = "";
             function factorialLoop(num) {
-  if (num === 0 || num === 1) {
-    return 1;
-  }
+                if (num === 0 || num === 1) {
+                    return 1;
+                }
 
-  let result = 1;
-  for (let i = 2; i <= num; i++) {
-    result *= i;
-  }
+                let result = 1;
+                for (let i = 2; i <= num; i++) {
+                    result *= i;
+                }
 
-  return result;
-}
-            function evaluateresult()
-            {
-               currentvalue= currentvalue.replace('×','*');
-               currentvalue= currentvalue.replace('÷','/');
-               currentvalue=currentvalue.replace('sin','Math.sin');
-               currentvalue=currentvalue.replace('cos','Math.cos');
-               currentvalue=currentvalue.replace('tan','Math.tan');
-               currentvalue=currentvalue.replace('π','Math.PI');
-               currentvalue=currentvalue.replace('Rad','*180/(Math.PI)');
-               currentvalue=currentvalue.replace('Deg','*(Math.PI)/180');
-               currentvalue=currentvalue.replace('log','Math.log10');
-               currentvalue=currentvalue.replace('ln','Math.log');
-               currentvalue=currentvalue.replace('e','Math.E');
-               currentvalue=currentvalue.replace('EXP','**');
-               currentvalue=currentvalue.replace('x^y','**');
-               currentvalue=currentvalue.replace('Inv','1/')
-               if(currentvalue.includes('!'))
-               {
-                var num=currentvalue.indexOf('x');
-                num-=1;
-                var ans=parseInt(currentvalue[num]);
-                var an=factorialloop(ans);
-                var f=an.toString();
-                currentvalue=f;
-               }
-               if(currentvalue.includes('√'))
-               {
-                currentvalue+=')';
-                currentvalue=currentvalue.replace('√','Math.sqrt(');
-               }
-               
-              if(currentvalue[currentvalue.length-1]=="%")
-              {
-                currentvalue= currentvalue.replace('%','*0.01');
-              }
-              else{
-                currentvalue= currentvalue.replace('%','*0.01*');
-              }
-               const result = eval(currentvalue);
-               currentvalue=result.toString();
-               display.value=currentvalue;
+                return result;
             }
-           for(var i=0;i<buttons.length;i++)
-           {
-            const button=buttons[i];
-            button.addEventListener('click',function(){
-               const value=button.innerText;
-              try{
-                if(value=="AC"){
-               currentvalue="";
-               display.value=currentvalue;
-              }
-              else if(value=="=" || value=="Ans")
-              {
-                evaluateresult();
-              }
-              else{
-                currentvalue+=value;
-                display.value=currentvalue;
-              }
-              }
-              catch(error){
-                currentvalue="ERROR";
-                display.value=currentvalue;
-              }
-              
-            });
-              
-           }
-     });
+            function evaluateresult() {
+                currentvalue = currentvalue.replace('×', '*');
+                currentvalue = currentvalue.replace('÷', '/');
+                currentvalue = currentvalue.replace('sin', 'Math.sin');
+                currentvalue = currentvalue.replace('cos', 'Math.cos');
+                currentvalue = currentvalue.replace('tan', 'Math.tan');
+                currentvalue = currentvalue.replace('π', 'Math.PI');
+                currentvalue = currentvalue.replace('Rad', '*180/(Math.PI)');
+                currentvalue = currentvalue.replace('Deg', '*(Math.PI)/180');
+                currentvalue = currentvalue.replace('log', 'Math.log10');
+                currentvalue = currentvalue.replace('ln', 'Math.log');
+                currentvalue = currentvalue.replace('e', 'Math.E');
+                currentvalue = currentvalue.replace('EXP', '**');
+                currentvalue = currentvalue.replace('x^y', '**');
+                currentvalue = currentvalue.replace('Inv', '1/')
+               
+                if (currentvalue.includes('√')) {
+                    currentvalue += ')';
+                    currentvalue = currentvalue.replace('√', 'Math.sqrt(');
+                }
+
+                if (currentvalue[currentvalue.length - 1] == "%") {
+                    currentvalue = currentvalue.replace('%', '*0.01');
+                }
+                else {
+                    currentvalue = currentvalue.replace('%', '*0.01*');
+                }
+                if (currentvalue[0] == "x" && currentvalue[1]=="!") {
+                    currentvalue = "0";
+                   
+                }
+                if(currentvalue[0]=="/" || currentvalue[0]=="*")
+                {
+                    currentvalue="ERROR";
+                    display.value = currentvalue;
+                    return;
+                }
+                if ( currentvalue[0] == "*" && currentvalue[1]=="*") {
+                    currentvalue = "0";
+                   
+                }
+                const result = eval(currentvalue);
+                currentvalue = result.toString();
+                display.value = currentvalue;
+            }
+            for (var i = 0; i < buttons.length; i++) {
+                const button = buttons[i];
+                button.addEventListener('click', function () {
+                    const value = button.innerText;
+                    
+                        if (value == "AC") {
+                            currentvalue = "";
+                            display.value = currentvalue;
+                        }
+                        else if (value == "=" || value == "Ans") {
+                            evaluateresult();
+                        }
+                        else {
+                            currentvalue += value;
+                            display.value = currentvalue;
+                        }
+                    
+                   
+
+                });
+
+            }
+        });
     </script>
-   
-      
+
+
 </body>
 
 </html>
