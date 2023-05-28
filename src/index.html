@@ -216,17 +216,16 @@
                     currentvalue = currentvalue.replace('%', '*0.01*');
                 }
                 if (currentvalue[0] == "x" && currentvalue[1]=="!") {
-                    currentvalue = "0";
+                    currentvalue = "1";
                    
                 }
-                if(currentvalue[0]=="/" || currentvalue[0]=="*")
+                if(currentvalue=="*0.01")
                 {
-                    currentvalue="ERROR";
-                    display.value = currentvalue;
-                    return;
+                    currentvalue="1";
                 }
-                if ( currentvalue[0] == "*" && currentvalue[1]=="*") {
-                    currentvalue = "0";
+              
+                if ( currentvalue=="**") {
+                    currentvalue = "1";
                    
                 }
                 const result = eval(currentvalue);
